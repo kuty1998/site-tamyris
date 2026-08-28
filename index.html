@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamyris Oliveira | Marketing Digital - Estratégias que Vendem</title>
+<meta name="description" content="Tamyris Oliveira Marketing Digital: Tráfego Pago, Redes Sociais, SEO, Criação de Sites e Artes Gráficas. Estratégias personalizadas para o seu negócio vender mais.">
+<meta name="keywords" content="marketing digital, tráfego pago, redes sociais, SEO, criação de sites, artes gráficas, Tamyris Oliveira">
+<meta name="author" content="Tamyris Oliveira Marketing Digital">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Tamyris Oliveira | Marketing Digital">
+<meta property="og:description" content="Estratégias digitais que transformam presença em resultados reais para o seu negócio.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2387CEEB%22>T</text></svg>">
+<style>
+  :root {
+    --preto: #000000;
+    --preto-claro: #0a0a0a;
+    --azul-claro: #87CEEB;
+    --azul-claro-escuro: #5fb8e0;
+    --branco: #FFFFFF;
+    --cinza-claro: #e6e6e6;
+    --cinza-medio: #b3b3b3;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  .faq-pergunta:focus-visible {
+    outline: 2px solid var(--azul-claro);
+    outline-offset: 3px;
+  }
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .divisor {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--azul-claro), var(--azul-claro-escuro));
+    margin: 20px auto;
+    border: none;
+    border-radius: 2px;
+  }
+  /* Botão padrão */
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-claro-escuro));
+    color: var(--preto);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.2);
+  }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(135, 206, 235, 0.35);
+  }
+  .btn-pequeno {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 12px;
+  }
+  /* Botão flutuante de WhatsApp */
+  .btn-whatsapp-flutuante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  .btn-whatsapp-flutuante:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  }
+  /* ===== SEÇÃO 1 — CABEÇALHO E APRESENTAÇÃO ===== */
+  header.hero {
+    text-align: center;
+    padding: 100px 24px 80px;
+    border-bottom: 1px solid #1a1a1a;
+    background: radial-gradient(circle at top center, rgba(135, 206, 235, 0.08) 0%, transparent 60%);
+  }
+  header.hero h1 {
+    color: var(--azul-claro);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  header.hero h2 {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    margin-bottom: 24px;
+  }
+  header.hero p {
+    max-width: 650px;
+    margin: 0 auto 36px;
+    color: var(--cinza-claro);
+    font-size: 1.05rem;
+  }
+  /* ===== SEÇÃO 2 — SERVIÇOS ===== */
+  section.servicos {
+    padding: 90px 24px;
+    text-align: center;
+  }
+  section.servicos > .container > h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 12px;
+  }
+  section.servicos > .container > p.subtitulo {
+    color: var(--cinza-medio);
+    max-width: 600px;
+    margin: 0 auto 50px;
+  }
+  .grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .servico-card {
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    padding: 32px 28px;
+    background-color: var(--preto-claro);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--azul-claro), var(--azul-claro-escuro));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .servico-card:hover {
+    border-color: var(--azul-claro);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(135, 206, 235, 0.1);
+  }
+  .servico-card:hover::before {
+    transform: scaleX(1);
+  }
+  .servico-card h3 {
+    color: var(--azul-claro);
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+  .servico-card p {
+    color: var(--cinza-claro);
+    font-size: 0.98rem;
+  }
+  .servico-card .icone {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  /* ===== SEÇÃO 3 — COMO FUNCIONA ===== */
+  section.como-funciona {
+    padding: 90px 24px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: var(--preto-claro);
+  }
+  section.como-funciona h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 12px;
+  }
+  .passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .passo {
+    text-align: center;
+  }
+  .passo .numero {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--azul-claro), var(--azul-claro-escuro));
+    color: var(--preto);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto 16px;
+  }
+  .passo h3 {
+    color: var(--azul-claro);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  .passo p {
+    color: var(--cinza-claro);
+    font-size: 0.95rem;
+  }
+  /* ===== SEÇÃO 4 — DIFERENCIAIS ===== */
+  section.diferenciais {
+    padding: 90px 24px;
+    text-align: center;
+  }
+  section.diferenciais h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 40px;
+  }
+  .lista-diferenciais {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .lista-diferenciais li {
+    padding: 16px 20px;
+    border-bottom: 1px solid #161616;
+    color: var(--branco);
+    font-size: 1.02rem;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+  }
+  .lista-diferenciais li:hover {
+    background-color: rgba(135, 206, 235, 0.05);
+    padding-left: 28px;
+  }
+  .lista-diferenciais li:last-child {
+    border-bottom: none;
+  }
+  /* ===== SEÇÃO 5 — DEPOIMENTOS ===== */
+  section.depoimentos {
+    padding: 90px 24px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: var(--preto-claro);
+  }
+  section.depoimentos h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 50px;
+  }
+  .grid-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+  }
+  .depoimento-card {
+    background-color: var(--preto);
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    padding: 28px;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  .depoimento-card:hover {
+    border-color: var(--azul-claro);
+    transform: translateY(-3px);
+  }
+  .depoimento-card .aspas {
+    color: var(--azul-claro);
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .depoimento-card p {
+    color: var(--cinza-claro);
+    font-style: italic;
+    margin-bottom: 16px;
+    font-size: 0.98rem;
+  }
+  .depoimento-card .autor {
+    color: var(--azul-claro);
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+  .depoimento-card .cargo {
+    color: var(--cinza-medio);
+    font-size: 0.85rem;
+  }
+  /* ===== SEÇÃO 6 — FAQ ===== */
+  section.faq {
+    padding: 90px 24px;
+    text-align: center;
+  }
+  section.faq h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    margin-bottom: 50px;
+  }
+  .faq-lista {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .faq-item {
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .faq-item:hover {
+    border-color: var(--azul-claro);
+  }
+  .faq-pergunta {
+    padding: 18px 24px;
+    color: var(--azul-claro);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--preto-claro);
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  .faq-resposta {
+    padding: 0 24px 18px;
+    color: var(--cinza-claro);
+    display: none;
+  }
+  .faq-item.active .faq-resposta {
+    display: block;
+  }
+  .faq-item.active .faq-pergunta span:last-child {
+    transform: rotate(45deg);
+  }
+  .faq-pergunta span:last-child {
+    transition: transform 0.3s ease;
+    font-size: 1.3rem;
+  }
+  /* ===== SEÇÃO 7 — CHAMADA FINAL ===== */
+  section.cta-final {
+    padding: 100px 24px;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(135, 206, 235, 0.1) 0%, transparent 70%);
+  }
+  section.cta-final h2 {
+    color: var(--azul-claro);
+    font-size: clamp(1.9rem, 5vw, 2.8rem);
+    max-width: 750px;
+    margin: 0 auto 20px;
+  }
+  section.cta-final p {
+    color: var(--cinza-claro);
+    max-width: 600px;
+    margin: 0 auto 16px;
+    font-size: 1.05rem;
+  }
+  section.cta-final p.urgencia {
+    color: var(--azul-claro);
+    font-weight: 500;
+    margin-bottom: 36px;
+    font-size: 0.95rem;
+  }
+  /* ===== SEÇÃO 8 — RODAPÉ ===== */
+  footer {
+    text-align: center;
+    padding: 50px 24px;
+    border-top: 1px solid #1a1a1a;
+    color: var(--cinza-medio);
+    font-size: 0.9rem;
+    background-color: var(--preto-claro);
+  }
+  footer strong {
+    color: var(--azul-claro);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  footer .contato {
+    margin: 10px 0;
+  }
+  footer .contato a {
+    color: var(--cinza-claro);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  footer .contato a:hover {
+    color: var(--azul-claro);
+  }
+  @media (max-width: 480px) {
+    header.hero { padding: 70px 20px 60px; }
+    section.servicos, section.como-funciona, section.diferenciais,
+    section.depoimentos, section.faq, section.cta-final { padding: 60px 20px; }
+    .btn { padding: 14px 24px; font-size: 0.95rem; }
+    .btn-whatsapp-flutuante { width: 55px; height: 55px; font-size: 24px; bottom: 20px; right: 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Vim%20pelo%20seu%20site%20e%20quero%20saber%20mais%20sobre%20os%20serviços%20de%20marketing%20digital." 
+     class="btn-whatsapp-flutuante" 
+     target="_blank" 
+     rel="noopener"
+     aria-label="Falar com a Tamyris no WhatsApp"
+     title="Falar no WhatsApp">
+    💬
+  </a>
+
+  <!-- ===== SEÇÃO 1 — CABEÇALHO E APRESENTAÇÃO ===== -->
+  <header class="hero">
+    <div class="container">
+      <h1>Tamyris Oliveira</h1>
+      <h2>Marketing Digital que transforma presença em resultados</h2>
+      <hr class="divisor">
+      <p>Especialista em estratégias digitais personalizadas para pequenos e médios negócios que querem vender mais, aparecer na internet e se destacar da concorrência.</p>
+      <a class="btn" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Vim%20pelo%20seu%20site%20e%20quero%20solicitar%20um%20orçamento%20gratuito." target="_blank" rel="noopener">📞 Solicitar Orçamento Grátis</a>
+    </div>
+  </header>
+
+  <!-- ===== SEÇÃO 2 — NOSSOS SERVIÇOS ===== -->
+  <section class="servicos">
+    <div class="container">
+      <h2>O que podemos fazer pelo seu negócio</h2>
+      <hr class="divisor">
+      <p class="subtitulo">Soluções completas para impulsionar sua marca na internet e atrair clientes qualificados todos os dias.</p>
+      
+      <div class="grid-servicos">
+        <div class="servico-card">
+          <div class="icone" aria-hidden="true">📈</div>
+          <h3>Tráfego Pago</h3>
+          <p>Criação e gestão de campanhas no Google, Instagram e Facebook para levar clientes qualificados diretamente até você. Segmentação precisa, orçamento controlado e máximo retorno do investimento.</p>
+          <a class="btn btn-pequeno" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Quero%20saber%20mais%20sobre%20Tráfego%20Pago." target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+
+        <div class="servico-card">
+          <div class="icone" aria-hidden="true">📱</div>
+          <h3>Gestão de Redes Sociais</h3>
+          <p>Conteúdo estratégico, artes atrativas e postagens programadas para o seu Instagram e Facebook. Construímos autoridade, engajamos seu público e transformamos seguidores em clientes.</p>
+          <a class="btn btn-pequeno" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Quero%20saber%20mais%20sobre%20Gestão%20de%20Redes%20Sociais." target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+
+        <div class="servico-card">
+          <div class="icone" aria-hidden="true">🔎</div>
+          <h3>SEO — Otimização para Buscas</h3>
+          <p>Deixamos seu site otimizado para aparecer nas primeiras posições do Google organicamente. Atraímos clientes que já estão buscando pelos seus serviços, sem custo por clique.</p>
+          <a class="btn btn-pequeno" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Quero%20saber%20mais%20sobre%20SEO." target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+
+        <div class="servico-card">
+          <div class="icone" aria-hidden="true">💻</div>
+          <h3>Criação de Sites e Landing Pages</h3>
+          <p>Sites modernos, rápidos e 100% responsivos para celular. Design focado em converter visitas em clientes, com botão de WhatsApp, formulários e todas as informações que o seu cliente precisa.</p>
+          <a class="btn btn-pequeno" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Quero%20saber%20mais%20sobre%20Criação%20de%20Sites." target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+
+        <div class="servico-card">
+          <div class="icone" aria-hidden="true">🎨</div>
+          <h3>Artes Gráficas e Identidade Visual</h3>
+          <p>Criação de posts, banners, cartões de visita e identidade visual completa. Peças profissionais alinhadas com a sua marca para transmitir credibilidade e se destacar da concorrência.</p>
+          <a class="btn btn-pequeno" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Quero%20saber%20mais%20sobre%20Artes%20Gráficas." target="_blank" rel="noopener">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 3 — COMO FUNCIONA ===== -->
+  <section class="como-funciona">
+    <div class="container">
+      <h2>Como trabalhamos</h2>
+      <hr class="divisor">
+      <p style="color: var(--cinza-medio); max-width: 600px; margin: 0 auto;">Processo simples, transparente e focado em resultados para o seu negócio.</p>
+      
+      <div class="passos">
+        <div class="passo">
+          <div class="numero" aria-hidden="true">1</div>
+          <h3>Diagnóstico Gratuito</h3>
+          <p>Analisamos sua presença digital atual e entendemos seus objetivos de negócio.</p>
+        </div>
+        <div class="passo">
+          <div class="numero" aria-hidden="true">2</div>
+          <h3>Estratégia Personalizada</h3>
+          <p>Criamos um plano de ação exclusivo para o seu segmento e público-alvo.</p>
+        </div>
+        <div class="passo">
+          <div class="numero" aria-hidden="true">3</div>
+          <h3>Execução Profissional</h3>
+          <p>Colocamos a estratégia em prática com qualidade, agilidade e acompanhamento contínuo.</p>
+        </div>
+        <div class="passo">
+          <div class="numero" aria-hidden="true">4</div>
+          <h3>Resultados Mensuráveis</h3>
+          <p>Você acompanha todos os resultados e vê o crescimento do seu negócio na prática.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 4 — DIFERENCIAIS ===== -->
+  <section class="diferenciais">
+    <div class="container">
+      <h2>Por que escolher a Tamyris Oliveira?</h2>
+      <hr class="divisor">
+      <ul class="lista-diferenciais">
+        <li>✅ Estratégias 100% personalizadas para cada negócio</li>
+        <li>✅ Atendimento próximo, humanizado e direto com a proprietária</li>
+        <li>✅ Foco em resultados mensuráveis e crescimento sustentável</li>
+        <li>✅ Preços justos e acessíveis para pequenos e médios negócios</li>
+        <li>✅ Suporte contínuo durante todo o projeto</li>
+        <li>✅ Transparência total em relatórios e comunicação</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 5 — DEPOIMENTOS ===== -->
+  <section class="depoimentos">
+    <div class="container">
+      <h2>O que dizem nossos clientes</h2>
+      <hr class="divisor">
+      
+      <div class="grid-depoimentos">
+        <div class="depoimento-card">
+          <div class="aspas" aria-hidden="true">"</div>
+          <p>O trabalho da Tamyris transformou a presença digital da minha loja. Em poucos meses, as vendas pelo WhatsApp dobraram e minha marca ficou muito mais conhecida na região.</p>
+          <div class="autor">— Carla Mendes</div>
+          <div class="cargo">Proprietária de Loja de Moda</div>
+        </div>
+
+        <div class="depoimento-card">
+          <div class="aspas" aria-hidden="true">"</div>
+          <p>Profissional incrível! O tráfego pago que ela criou para a minha clínica trouxe pacientes qualificados todos os dias. O retorno sobre o investimento foi muito acima do esperado.</p>
+          <div class="autor">— Dr. Ricardo Almeida</div>
+          <div class="cargo">Dentista</div>
+        </div>
+
+        <div class="depoimento-card">
+          <div class="aspas" aria-hidden="true">"</div>
+          <p>O site que ela criou para o meu restaurante é lindo e funciona perfeitamente no celular. Os clientes elogiam muito e fica muito mais fácil para eles fazerem pedidos. Recomendo de olhos fechados!</p>
+          <div class="autor">— Marcos Silva</div>
+          <div class="cargo">Proprietário de Restaurante</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 6 — FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <hr class="divisor">
+      
+      <div class="faq-lista">
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Quanto tempo leva para ver os resultados?</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta">
+            Para tráfego pago, os primeiros resultados começam a aparecer em até 15 dias. Para redes sociais e SEO, os resultados são mais graduais, geralmente visíveis a partir de 2 a 3 meses de trabalho consistente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Os preços são fixos ou personalizados?</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta">
+            Cada projeto é personalizado de acordo com as necessidades e objetivos do seu negócio. Fazemos um diagnóstico gratuito e apresentamos um orçamento justo e adequado à realidade da sua empresa.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Vocês atendem empresas de qualquer segmento?</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta">
+            Sim! Atendemos empresas de diversos segmentos: comércio, serviços, saúde, alimentação, construção civil e muito mais. Cada estratégia é adaptada ao público-alvo específico do seu ramo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta" aria-expanded="false">
+            <span>Preciso já ter site ou redes sociais para contratar?</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-resposta">
+            Não precisa! Se você ainda não tem presença digital, criamos tudo do zero para você: site, perfis nas redes sociais, identidade visual e toda a estratégia para começar com o pé direito.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 7 — CHAMADA FINAL ===== -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>Pronto para transformar a presença digital da sua empresa?</h2>
+      <p>Vamos conversar sobre o seu projeto e criar uma estratégia que realmente funcione para você.</p>
+      <p class="urgencia">⏰ Orçamento gratuito e sem compromisso — vagas limitadas por mês!</p>
+      <a class="btn" href="https://wa.me/5519989585145?text=Olá%20Tamyris!%20Vim%20pelo%20seu%20site%20e%20quero%20solicitar%20um%20orçamento%20gratuito." target="_blank" rel="noopener">📞 Falar com a Tamyris Agora</a>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO 8 — RODAPÉ ===== -->
+  <footer>
+    <div class="container">
+      <strong>Tamyris Oliveira Marketing Digital</strong>
+      <div class="contato">
+        📞 <a href="https://wa.me/5519989585145" target="_blank" rel="noopener">(19) 98958-5145</a>
+      </div>
+      <div class="contato">
+        📧 E-mail: <a href="mailto:otamyris1@gmail.com">otamyris1@gmail.com</a>
+      </div>
+      <br>
+      📍 Atendemos em todo o Brasil
+      <br><br>
+      © 2026 Tamyris Oliveira Marketing Digital. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script>
+    // Funcionalidade do FAQ (acordeão), com suporte a leitores de tela
+    document.querySelectorAll('.faq-pergunta').forEach(pergunta => {
+      pergunta.addEventListener('click', () => {
+        const item = pergunta.parentElement;
+        const abrindo = !item.classList.contains('active');
+        item.classList.toggle('active');
+        pergunta.setAttribute('aria-expanded', abrindo);
+      });
+    });
+  </script>
+
+</body>
+</html>
